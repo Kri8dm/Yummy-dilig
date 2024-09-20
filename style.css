@@ -1,0 +1,603 @@
+
+
+
+/* Transparent Navbar */
+.transparent-navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+/* Navbar Scroll Effect */
+.transparent-navbar.scrolled {
+  background-color: rgba(255, 153, 0, 0.9); /* Orange color when scrolled */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 45);
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 60px; /* Adjust the height of the logo */
+}
+
+/* banner start */
+/* Carousel Styling */
+.carousel-item {
+  height: 500px; /* Set a default height for desktop */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the full area without distortion */
+  object-position: center; /* Center the image */
+}
+
+/* Center the carousel caption vertically */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+/* Style for design images in the first slide */
+.design-images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.design-images img {
+  height: 100px;
+  width: auto;
+}
+
+/* Adjustments for tablet screens */
+@media (max-width: 992px) {
+  .carousel-item {
+    height: 300px; /* Adjust height for tablet screens */
+  }
+
+  .carousel-caption {
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  .design-images img {
+    height: 90px; /* Smaller images for tablet screens */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 250px; /* Smaller height for mobile screens */
+  }
+
+  .carousel-caption {
+    top: 35%;
+    transform: translateY(-35%);
+  }
+
+  .design-images img {
+    height: 80px;
+    width: 100%; /* Smaller design images for mobile */
+  }
+}
+
+/* banner end */
+/* Counter section start  */
+.counter-section {
+  background-image: url('./Yummy iamges/first\ banner.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0; /* Padding for space around content */
+  min-height: 400px; /* Use min-height instead of fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* product page counter background image start */
+#homeproduct{
+  background-image: url('./Yummy iamges/Banana-Chips-Group-Photo.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0; /* Padding for space around content */
+  min-height: 400px; /* Use min-height instead of fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* prodict page counter background image end  */
+#countercontat{
+  background-image: url('./Yummy iamges/Diet-Puffs-Group.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px 0; /* Padding for space around content */
+  min-height: 400px; /* Use min-height instead of fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: space-between;
+  gap: 20px; /* Space between items */
+  width: 100%; /* Ensure full width */
+}
+
+.counter-box {
+  flex: 1 1 250px; /* All boxes take the same width, 250px as the base */
+  max-width: 250px; /* Fixed max-width for all boxes */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Background for readability 
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  margin: 10px; /* Margin for spacing */
+  box-sizing: border-box; /* Ensure padding and margin don't affect width */
+}
+
+.counter-number {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Spacing between number and description */
+}
+
+.counter-description {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .counter-wrapper {
+    flex-direction: row; /* Keep horizontal row but allow wrapping */
+    justify-content: center; /* Center horizontally */
+  }
+  
+
+  .counter-box {
+    flex: 1 1 45%; /* Use a percentage width for responsiveness */
+    max-width: 45%; /* Fix max-width so two boxes fit in a row */
+    margin: 10px 5px; /* Adjust margin for spacing */
+  }
+
+  .counter-number {
+    font-size: 36px; /* Reduce font size for smaller screens */
+  }
+
+  .counter-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-wrapper {
+    flex-direction: column;
+   /* Stack items vertically on very small screens */
+  }
+  .counter-box {
+    flex: 1 1 100%; /* Full width for each box */
+    max-width: 100%; /* Ensure it takes full width on small screens */
+    margin: 10px 0; /* Adjust margin for vertical spacing */
+  }
+
+  .counter-number {
+    font-size: 28px; /* Further reduce font size on very small screens */
+  }
+
+  .counter-description {
+    font-size: 14px;
+  }
+}
+
+
+/* Product Carousel Styling */
+
+/* ============ */
+/* Testimonial Section Styling */
+.testimonials {
+  background-color: #f9f9f9;
+
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-name {
+    font-size: 16px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+}
+/* ========== */
+/* Google location start */
+.location-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+/* Images Grid */
+.grid-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Ensuring equal height between image grid and map */
+.row.g-3 > .col-6 {
+  height: 230px; /* Set height for the images */
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* WOW.js animation */
+.wow {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .row.g-3 > .col-6 {
+    height: auto; /* Remove fixed height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .map-responsive iframe {
+    height: 250px; /* Further reduce height for mobile screens */
+  }
+}
+/* About us start */
+/* About Us Page Styling */
+.about-us {
+  background-color: #f9f9f9;
+}
+
+.about-us h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Ensure circular shape */
+}
+
+.mission-vision-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure cards maintain equal height */
+}
+
+.mission-vision-card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.mission-vision-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .founder-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .founder-image {
+    margin-bottom: 15px;
+  }
+
+  .mission-vision-card {
+    margin-bottom: 20px;
+  }
+}
+.founder-box h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.founder-box .row {
+  margin-top: 20px; /* Optional spacing between founder section and Ganesh row */
+}
+
+/* About us end */  
+/* ========Home page product start========= */
+/* General Styles */
+a {
+  text-decoration: none; /* Remove blue underline from links */
+}
+
+a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Text color */
+  border: 1px solid black; /* Add solid black border */
+  border-radius: 20px;
+}
+
+.btn:hover {
+  background-color: #0f9959; /* Darker green on hover */
+  color: #fff; /* Change text color on hover */
+  border: none; /* Ensure no border on hover */
+}
+
+/* Nav Pills Active State */
+.nav-pills .nav-item .active {
+  background-color: #c3e6cb !important; /* Light green for active tab */
+  color: #000; /* Black text for active */
+}
+
+/* Card Styles */
+.fruite-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.fruite-img img {
+  width: 100%;
+  height: 300px; /* Adjust image height for consistency */
+  object-fit: cover; /* Ensure the image fits properly within the card */
+  border-bottom: 1px solid #ddd; /* Add a border at the bottom of the image */
+}
+
+.fruite-item .p-4 {
+  flex-grow: 1; /* Ensure content inside the card fills available space */
+  border: 1px solid #ddd; /* Add border around card content */
+  border-top: none; /* Remove border from top as the image already has one */
+}
+
+.fruite-item .p-4 h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.fruite-item .p-4 p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hover effect on card */
+.fruite-item:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Add a shadow on hover */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fruite-img img {
+    height: 200px; /* Reduce image height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    font-size: 14px; /* Adjust button size on smaller screens */
+    padding: 8px 16px;
+  }
+
+  .fruite-item {
+    height: auto; /* Allow the card to adjust its height on mobile */
+  }
+
+  .p-4 {
+    padding: 15px;
+  }
+
+  .fruite-img img {
+    height: 150px; /* Further reduce image height for very small screens */
+  }
+}
+
+
+/* =========Home page product end======== */
+
+/* prduct page css start */
+.custom-card {
+  border: 1px solid #0c0707;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  height: 480px; /* Fixed height for desktop */
+}
+
+.custom-card img {
+  height: 350px;
+  object-fit: cover; /* Make sure the images fit well within the card */
+}
+
+/* .custom-card-info {
+  padding: 10px;
+} */
+#crousalheight{
+  height: 400px;
+}
+
+.custom-card-info h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.custom-card-info p {
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-carousel-prev-icon,
+.custom-carousel-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .custom-card {
+    height: 350px; /* Adjust height for tablets */
+  }
+
+  .custom-card img {
+    height: 200px; /* Adjust image size */
+  }
+}
+
+/* For mobile */
+@media (max-width: 500px) {
+  .custom-card {
+    height: auto; /* Auto height for smaller screens */
+  }
+
+  .custom-card img {
+    height: 200px; /* Smaller image size for mobile */
+  }
+  #crousalheight{
+    height: 250px;
+  }
+}
+
+/* Product page CSS end */
+
+/* Footer Styling */
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-heading {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f1c40f; /* Change to your desired hover color */
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f1c40f; /* Change to your desired hover color */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+@media (max-width: 768px) {
+  .footer-social {
+    justify-content: center;
+  }
+}
