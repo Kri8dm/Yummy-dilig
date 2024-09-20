@@ -11,18 +11,25 @@
   transition: background-color 0.5s ease;
 }
 
-/* Navbar Scroll Effect */
-.transparent-navbar.scrolled {
-  background-color: rgba(255, 153, 0, 0.9); /* Orange color when scrolled */
+ /* Initial navbar background and text color */
+ .transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.transparent-navbar.scrolled {
+  /* background-color: rgba(255, 255, 255, 0.9); Orange background when scrolled */
+}
+
+/* Navbar link colors before scroll */
 .navbar-nav .nav-link {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important; /* Black text before scroll */
   font-weight: bold;
 }
 
-.navbar-nav .nav-link:hover {
-  color: rgb(255, 255, 45);
+/* Navbar link colors after scroll */
+.transparent-navbar.scrolled .nav-link {
+  color: rgb(0, 0, 0) !important; /* White text after scroll */
 }
 
 /* Logo styling */
