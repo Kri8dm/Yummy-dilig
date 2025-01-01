@@ -624,3 +624,34 @@ a:hover {
     justify-content: center;
   }
 }
+/* banner image  */
+
+/* General Styles for Carousel Images */
+.carousel-item img {
+ /* Ensures the aspect ratio is maintained */
+  object-fit: cover; /* Ensures image covers the container */
+}
+
+/* Styles for Small Devices (Phones) */
+@media (max-width: 576px) {
+  .carousel-item img {
+    object-fit: contain; /* Ensures the full image is visible */
+  }
+}
+
+/* Styles for Medium Devices (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .carousel-item img {
+    object-fit: contain; /* Ensures the full image is visible */
+  }
+}
+
+/* Styles for Large Devices (Desktops) */
+@media (min-width: 769px) {
+  .carousel-item img {
+    object-fit: cover; /* Image covers the container while maintaining aspect ratio */
+  }
+}
+
+
+/* banner image end */
